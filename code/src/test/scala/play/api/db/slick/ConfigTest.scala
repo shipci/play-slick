@@ -49,11 +49,11 @@ class ConfigSpec extends Specification {
       "db.bad-object-type.driver"-> "play.api.db.slick.test.SomeDummyDriver",
       "db.bad-object-type.slickdriver" -> "play.api.db.slick.test.NotAnExtendedDriver",
 
-      "evolutionplugin" -> "disabled")
+      "play.modules.db.bonecp.enabled" -> false,
+      "play.modules.db.evolutions.enabled" -> false)
   }
 
   def fakeApplication = FakeApplication(
-    withoutPlugins = Seq("play.api.db.BoneCPPlugin"),
     additionalConfiguration = testConfiguration)
 
   "Config.driver" should {
