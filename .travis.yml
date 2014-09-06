@@ -6,7 +6,7 @@
    - openjdk6
    - openjdk7
    - oraclejdk8
-notifications:
+ notifications:
      email:
          recipients:
              - vidyac.raghav@gmail.com
