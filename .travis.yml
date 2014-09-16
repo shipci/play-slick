@@ -6,6 +6,7 @@
    - openjdk6
    - openjdk7
    - oraclejdk8
+   
  notifications:
      email:
          recipients:
